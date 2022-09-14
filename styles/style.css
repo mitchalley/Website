@@ -21,6 +21,7 @@ h1 {
   .btn {
     cursor: pointer;
     border: none;
+    text-align:left;
     font-family: 'Montserrat';
     background-color: transparent;
     height: 50px;
