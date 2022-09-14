@@ -18,3 +18,15 @@ h1 {
     line-height: .8em;
     padding: .4em;
   }
+  .btn {
+    cursor: pointer;
+    border: none;
+    font-family: 'Montserrat';
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    font-size: 1.5em;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    border-color: #00AA66;
+    border-style: solid;
+}
