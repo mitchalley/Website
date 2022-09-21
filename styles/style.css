@@ -18,6 +18,26 @@ h1 {
     line-height: .8em;
     padding: .4em;
   }
+  h2 {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    font-family: 'Montserrat';
+    font-size: 5em;
+    width: .4em;
+    line-height: .8em;
+    padding: .4em;
+  }
+  h3 {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    font-family: 'Montserrat';
+    font-size: 5em;
+    width: .4em;
+    line-height: .8em;
+    padding: .4em;
+  }
   .btn {
     cursor: pointer;
     border: none;

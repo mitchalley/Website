@@ -9,12 +9,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <title>Mitch Alley</title>
 </head>
-<body>
+<body style="background-color:#e5e5e5">
+    <button id="back"onclick="toggleClick()"class="btn"style="display:none;font-size:30px;font-weight:bold;">Back</button>
     <script src="./scripts/scripts.js"></script>
     <h1 id="nam">MITCH ALLEY
         <td>&nbsp;</td>
         <button id="aboutme"onclick="change()"class="btn"style="font-size:30px;font-weight:bold;">About&nbspMe!</button>
-        <button id="projects"class="btn"style="font-size:30px;font-weight:bold;">View&nbspProjects</button>
+        <button id="projects"onclick="changeToProjects()"class="btn"style="font-size:30px;font-weight:bold;">View&nbspProjects</button>
+        
+        
     </h1>
+    <h2 id="aboutmeheader"style="display:none;">About&nbspme
+        <p id="aboutmetxt"style="font-size:30px;font-weight:bold;">text&nbspthat&nbspwill&nbspbe&nbspmodified</p>
+    </h2>
+    <h3 id="projectsheader"style="display:none;">Projects
+        <p style="font-size:30px;font-weight:bold;">Projects&nbspthat&nbspwill&nbspbe&nbspadded</p>
+    </h3>
 </body>
 </html>

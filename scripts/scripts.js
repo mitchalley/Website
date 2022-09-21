@@ -52,9 +52,20 @@ var render = function() {
 }
 
 function change(){
-    document.getElementById("aboutme").style.display = "none"
-    document.getElementById("projects").style.display = "none"
     document.getElementById("nam").style.display = "none"
+    document.getElementById("back").style.display = "block"
+    document.getElementById("aboutmeheader").style.display = "block"
+}
+function toggleClick(){
+    document.getElementById("nam").style.display = "block"
+    document.getElementById("back").style.display = "none"
+    document.getElementById("aboutmeheader").style.display = "none"
+    document.getElementById("projectsheader").style.display = "none"
+}
+function changeToProjects(){
+    document.getElementById("nam").style.display = "none"
+    document.getElementById("back").style.display = "block"
+    document.getElementById("projectsheader").style.display = "block"
 }
 
 function onMouseMove(event) {
