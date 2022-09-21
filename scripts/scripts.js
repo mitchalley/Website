@@ -51,6 +51,12 @@ var render = function() {
     renderer.render(scene, camera);
 }
 
+function change(){
+    document.getElementById("aboutme").style.display = "none"
+    document.getElementById("projects").style.display = "none"
+    document.getElementById("nam").style.display = "none"
+}
+
 function onMouseMove(event) {
     event.preventDefault();
 
