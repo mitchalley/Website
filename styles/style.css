@@ -17,6 +17,7 @@ h1 {
     width: .4em;
     line-height: .8em;
     padding: .4em;
+    opacity: 1;
   }
   h2 {
     position: absolute;
@@ -27,6 +28,7 @@ h1 {
     width: .4em;
     line-height: .8em;
     padding: .4em;
+    opacity: 0;
   }
   h3 {
     position: absolute;

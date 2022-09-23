@@ -50,6 +50,32 @@ var render = function() {
 
     renderer.render(scene, camera);
 }
+function fade(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.01){
+            clearInterval(timer);
+            document.getElementById(element).style.display = 'none';
+        }
+        document.getElementById(element).style.opacity = op;
+        document.getElementById(element).style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.3;
+    }, 50);
+}
+
+function slideIn(out, sin) {
+    setTimeout(function () {
+        var elem = document.getElementById(out);
+        elem.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+        elem.style.left = "0px";
+        elem.style.opacity = 0;
+
+        var s = document.getElementById(sin);
+        s.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+        s.style.left = "0px";
+        s.style.opacity = 1;
+    }, 1000);
+}
 
 function change(){
     document.getElementById("nam").style.display = "none"
