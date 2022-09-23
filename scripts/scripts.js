@@ -50,49 +50,54 @@ var render = function() {
 
     renderer.render(scene, camera);
 }
-function fade(element) {
-    var op = 1;  // initial opacity
-    var timer = setInterval(function () {
-        if (op <= 0.01){
-            clearInterval(timer);
-            document.getElementById(element).style.display = 'none';
-        }
-        document.getElementById(element).style.opacity = op;
-        document.getElementById(element).style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op -= op * 0.3;
-    }, 50);
-}
 
-function slideIn(out, sin) {
-    setTimeout(function () {
-        var elem = document.getElementById(out);
+currScrn = 'nam'
+prevScrn = []
+
+function slideIn(newScrn) {
+    var elem = document.getElementById(currScrn);
+    elem.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+    elem.style.left = "-1em";
+    elem.style.opacity = 0;
+
+    var s = document.getElementById(newScrn);
+    s.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+    s.style.left = "2em";
+    s.style.opacity = 1;
+
+    if (currScrn == 'nam'){
+        var elem = document.getElementById('back');
+        elem.style.display = 'block'
         elem.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
-        elem.style.left = "0px";
-        elem.style.opacity = 0;
+        elem.style.left = "5em";
+        elem.style.opacity = 1;
+    }
 
-        var s = document.getElementById(sin);
-        s.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
-        s.style.left = "0px";
-        s.style.opacity = 1;
-    }, 1000);
+    prevScrn.push(currScrn)
+    currScrn = newScrn
 }
 
-function change(){
-    document.getElementById("nam").style.display = "none"
-    document.getElementById("back").style.display = "block"
-    document.getElementById("aboutmeheader").style.display = "block"
+function slideOut(){
+    var elem = document.getElementById(currScrn);
+    elem.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+    elem.style.left = "5em";
+    elem.style.opacity = 0;
+
+    currScrn = prevScrn.pop()
+    var s = document.getElementById(currScrn);
+    s.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+    s.style.left = "2em";
+    s.style.opacity = 1;
+
+    if (currScrn == 'nam'){
+    var elem = document.getElementById('back');
+    elem.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+    elem.style.left = "5em";
+    elem.style.opacity = 0;
+    }
 }
-function toggleClick(){
-    document.getElementById("nam").style.display = "block"
-    document.getElementById("back").style.display = "none"
-    document.getElementById("aboutmeheader").style.display = "none"
-    document.getElementById("projectsheader").style.display = "none"
-}
-function changeToProjects(){
-    document.getElementById("nam").style.display = "none"
-    document.getElementById("back").style.display = "block"
-    document.getElementById("projectsheader").style.display = "block"
-}
+
+
 
 function onMouseMove(event) {
     event.preventDefault();
