@@ -33,13 +33,24 @@ h1 {
   h3 {
     position: absolute;
     top: 2em;
-    left: 2em;
+    left: 5em;
     font-family: 'Montserrat';
     font-size: 5em;
     width: .4em;
     line-height: .8em;
     padding: .4em;
     opacity: 0;
+  }
+  h4 {
+    position: absolute;
+    top: -3.6em;
+    left: 3em;
+    font-family: 'Montserrat';
+    font-size: 5em;
+    text-transform: uppercase;
+    width: .4em;
+    line-height: .8em;
+    padding: .4em;
   }
   .btn {
     cursor: pointer;
@@ -53,8 +64,8 @@ h1 {
 }
 .backbtn {
   cursor: pointer;
-  top: 1em;
-  left: 1em;
+  top: 0em;
+  left: 0em;
   text-align:left;
   font-family: 'Montserrat';
   background-color: transparent;

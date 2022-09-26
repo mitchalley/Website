@@ -55,46 +55,78 @@ currScrn = 'nam'
 prevScrn = []
 
 function slideIn(newScrn) {
-    var elem = document.getElementById(currScrn);
-    elem.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
-    elem.style.left = "-1em";
-    elem.style.opacity = 0;
-
-    var s = document.getElementById(newScrn);
-    s.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
-    s.style.left = "2em";
-    s.style.opacity = 1;
-
-    if (currScrn == 'nam'){
-        var elem = document.getElementById('back');
-        elem.style.display = 'block'
-        elem.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
-        elem.style.left = "5em";
-        elem.style.opacity = 1;
+    var tout = document.getElementById(currScrn);
+    var tin = document.getElementById(newScrn);
+    tin.style.display = 'block';
+    var backbtn = null
+    var backbtn = document.getElementById('back');
+    
+    needBackBtn = false;
+    if(backbtn.style.display == 'none'){
+        backbtn.style.display = 'block';
+        backbtn.style.opacity = 0
+        needBackBtn = true
     }
+    
+    setTimeout(function(){
+        tout.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+        tout.style.left = "-1em";
+        tout.style.opacity = 0;
+    
+        tin.style.opacity = 0;
+        tin.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+        tin.style.left = "2em";
+        tin.style.opacity = 1;
+
+        if (needBackBtn){
+            backbtn.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+            backbtn.style.left = "0em";
+            backbtn.style.opacity = 1;
+        }
+
+    }, 0);
+
+    setTimeout(function(){
+        tout.style.display = 'none';
+    }, 400);
 
     prevScrn.push(currScrn)
     currScrn = newScrn
 }
 
 function slideOut(){
-    var elem = document.getElementById(currScrn);
-    elem.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
-    elem.style.left = "5em";
-    elem.style.opacity = 0;
+    var tout = document.getElementById(currScrn);
+    currScrn = prevScrn.pop();
+    var tin = document.getElementById(currScrn);
+    tin.style.display = 'block'
+    var backbtn = document.getElementById('back');
+    
+    setTimeout(function() {
+        tout.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+        tout.style.left = "5em";
+        tout.style.opacity = 0;
+        
+        
+        tin.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+        tin.style.left = "2em";
+        tin.style.opacity = 1;
 
-    currScrn = prevScrn.pop()
-    var s = document.getElementById(currScrn);
-    s.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
-    s.style.left = "2em";
-    s.style.opacity = 1;
+        if (currScrn == 'nam'){
+            
+            backbtn.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
+            backbtn.style.left = "4em";
+            backbtn.style.opacity = 0;
+        }
+    }, 0);
 
-    if (currScrn == 'nam'){
-    var elem = document.getElementById('back');
-    elem.style.transition = "left 0.2s ease-in-out, opacity 0.2s linear";
-    elem.style.left = "5em";
-    elem.style.opacity = 0;
-    }
+    setTimeout(function() {
+        tout.style.display = 'none';
+        if (currScrn == 'nam'){
+            backbtn.style.display = 'none';
+        }
+    }, 400);
+
+    
 }
 
 
