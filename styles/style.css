@@ -6,6 +6,10 @@ body {
 canvas { 
     display: block;
 }
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
 
 h1 {
     position: absolute;
@@ -13,7 +17,6 @@ h1 {
     left: 2em;
     font-family: 'Montserrat';
     font-size: 5em;
-    text-transform: uppercase;
     width: .4em;
     line-height: .8em;
     padding: .4em;
