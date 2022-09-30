@@ -57,6 +57,62 @@ h1 {
     line-height: .8em;
     padding: .4em;
   }
+  h5 {
+    position: absolute;
+    top: 1.68em;
+    left: 5em;
+    font-family: 'Montserrat';
+    font-size: 5em;
+    width: .4em;
+    line-height: .8em;
+    padding: .4em;
+    opacity: 0;
+  }
+  h6 {
+    position: absolute;
+    top: 1.68em;
+    left: 5em;
+    font-family: 'Montserrat';
+    font-size: 5em;
+    width: .4em;
+    line-height: .8em;
+    padding: .4em;
+    opacity: 0;
+  }
+  h7 {
+    position: absolute;
+    top: 1.68em;
+    left: 5em;
+    font-family: 'Montserrat';
+    font-size: 5em;
+    width: .4em;
+    line-height: .8em;
+    padding: .4em;
+    opacity: 0;
+  }
+  h8 {
+    position: absolute;
+    top: 1.68em;
+    left: 5em;
+    font-family: 'Montserrat';
+    font-size: 5em;
+    width: .4em;
+    line-height: .8em;
+    padding: .4em;
+    opacity: 0;
+  }
+  h9 {
+    position: absolute;
+    top: 1.68em;
+    left: 5em;
+    font-family: 'Montserrat';
+    font-size: 5em;
+    width: .4em;
+    line-height: .8em;
+    padding: .4em;
+    opacity: 0;
+  }
+  
   .btn {
     cursor: pointer;
     border: none;
