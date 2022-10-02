@@ -59,7 +59,7 @@ h1 {
   }
   h5 {
     position: absolute;
-    top: 1.68em;
+    top: 1em;
     left: 5em;
     font-family: 'Montserrat';
     font-size: 5em;
@@ -70,7 +70,7 @@ h1 {
   }
   h6 {
     position: absolute;
-    top: 1.68em;
+    top: 1em;
     left: 5em;
     font-family: 'Montserrat';
     font-size: 5em;
@@ -81,8 +81,9 @@ h1 {
   }
   h7 {
     position: absolute;
-    top: 1.68em;
+    top: 3em;
     left: 5em;
+    font-weight: bold;
     font-family: 'Montserrat';
     font-size: 5em;
     width: .4em;
