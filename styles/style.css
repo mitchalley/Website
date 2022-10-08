@@ -93,8 +93,9 @@ h1 {
   }
   h8 {
     position: absolute;
-    top: 1.68em;
+    top: 3em;
     left: 5em;
+    font-weight: bold;
     font-family: 'Montserrat';
     font-size: 5em;
     width: .4em;
