@@ -12,6 +12,7 @@ Steps
 
 1) Download repo
 2) Open terminal, change directory into MarketMania folder
-3) Run pod install
-4) Open application through MarketMania.xcworkspace file
-5) Run with simulator (iPhone 12 tested and working)
+3) Unzip pods.zip
+4) Run pod install
+5) Open application through MarketMania.xcworkspace file
+6) Run with simulator (iPhone 12 tested and working)
