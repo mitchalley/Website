@@ -52,14 +52,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "270C7A95-11D0-43CF-89FB-4CFEE91CAD4D - 256953fe549e01b7"
+                  uuid = "270C7A95-11D0-43CF-89FB-4CFEE91CAD4D - daf8b29f780921"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MarketMania.SignUpVC.handleSignUp() -&gt; ()"
                   moduleName = "MarketMania"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mitchalley/Downloads/MarketMania/MarketMania/Auth/SignUpVC.swift"
+                  urlString = "file:///Users/mitchalley/Downloads/Website/MarketMania/MarketMania/Auth/SignUpVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "39"
@@ -67,14 +67,14 @@
                   offsetFromSymbolStart = "2429">
                </Location>
                <Location
-                  uuid = "270C7A95-11D0-43CF-89FB-4CFEE91CAD4D - 627d791d4494a8da"
+                  uuid = "270C7A95-11D0-43CF-89FB-4CFEE91CAD4D - 47ced2518f72a050"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MarketMania.SignUpVC.handleSignUp() -&gt; ()"
                   moduleName = "MarketMania"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mitchalley/Downloads/MarketMania/MarketMania/Auth/SignUpVC.swift"
+                  urlString = "file:///Users/mitchalley/Downloads/Website/MarketMania/MarketMania/Auth/SignUpVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "40"
