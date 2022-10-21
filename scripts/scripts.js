@@ -28,9 +28,9 @@ var material = new THREE.MeshLambertMaterial({color: 0xF7F7F7});
 meshX = -10;
 for(var i = 0; i<15;i++) {
     var mesh = new THREE.Mesh(geometry, material);
-    mesh.position.x = (Math.random() - 0.5) * 10;
+    mesh.position.x = (Math.random() * 13) - 3;
     mesh.position.y = (Math.random() - 0.5) * 10;
-    mesh.position.z = (Math.random() - 0.5) * 10;
+    mesh.position.z =  (Math.random() * 5) - 7;
     scene.add(mesh);
     meshX+=1;
 }
@@ -144,7 +144,7 @@ function onMouseMove(event) {
         this.tl = new TimelineMax();
         this.tl.to(intersects[i].object.scale, 1, {x: 2, ease: Expo.easeOut})
         this.tl.to(intersects[i].object.scale, .5, {x: .5, ease: Expo.easeOut})
-        this.tl.to(intersects[i].object.position, .5, {x: 2, ease: Expo.easeOut})
+        this.tl.to(intersects[i].object.position, .5, {y: 4, ease: Expo.easeOut})
         this.tl.to(intersects[i].object.rotation, .5, {y: Math.PI*.5, ease: Expo.easeOut}, "=-1.5")
     }
 }
