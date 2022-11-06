@@ -138,11 +138,18 @@ function sweetalert(){
         showCancelButton: true,
         focusConfirm: false,
         confirmButtonText:
-          '<a href="https://github.com/mitchalley/Website/blob/main/Resume%20-%20Mitchell%20Alley.pdf" style="color:white;">Let\'s see it!</a> ',
+          '<a>Let\'s see it!</a> ',
 
         cancelButtonText:
           'Settle down hotshot...',
         cancelButtonAriaLabel: 'Thumbs down'
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            window.open("https://github.com/mitchalley/Website/blob/main/Resume%20-%20Mitchell%20Alley.pdf");
+        } else if (result.isDenied) {
+          Swal.fire('Changes are not saved', '', 'info')
+        }
       })
 }
 
