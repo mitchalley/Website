@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -8,57 +9,110 @@
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="package/dist/sweetalert2.all.min.js"></script>
     <title>Mitch Alley</title>
 </head>
+
 <body style="background-color:#e5e5e5">
-    
+
     <script src="./scripts/scripts.js"></script>
     <h1 id="nam">MITCH ALLEY
         <td>&nbsp;</td>
-        <button id="aboutme"onclick="slideIn('aboutmeheader')"class="btn"style="font-size:30px;font-weight:bold;color:black;">About&nbspMe!</button>
-        <a href="https://github.com/mitchalley/Website/blob/main/Resume%20-%20Mitchell%20Alley.pdf"class="btn"style="font-size:30px;font-weight:bold;color:black;">&nbspDownload&nbspResume</a>
-        <button id="projects"onclick="slideIn('projectsheader')"class="btn"style="font-size:30px;font-weight:bold;color:black;">View&nbspProjects</button>
-        
-        
+        <button id="aboutme" onclick="slideIn('aboutmeheader')" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">About&nbspMe!</button>
+        <button id="contact" onclick="slideIn('contactHeader')" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Contact&nbspInformation</button>
+        <button id="resume" onclick="sweetalert()"class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Download&nbspResume</button>
+        <button id="projects" onclick="slideIn('projectsheader')" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">View&nbspProjects</button>
+
+
     </h1>
-    <h2 id="aboutmeheader"style='display:none;color:black;'>About&nbspMe
-        <p id="aboutmetxt"style="font-size:30px;font-weight:bold;color:black;">I&nbspam&nbspa&nbspgraduate&nbspfrom&nbspthe&nbspUniversity&nbspof&nbspWisconsin&nbsp-&nbspMadison&nbspwith&nbspa&nbspbachelor&nbspof&nbspscience&nbspin&nbspcomputer science&nbspand&nbspeconomics&nbspwith&nbspmath&nbspemphasis.&nbsp&nbspDuring&nbspmy&nbsptime&nbspat&nbspUW,&nbspI&nbspwas&nbspon&nbspthe&nbspDean’s&nbsplist&nbspmy&nbsplast 3&nbspyears&nbspof&nbspmy&nbspeducation,&nbspI&nbspwas&nbspa&nbspstudent&nbsp-&nbspathlete&nbspon&nbspthe&nbsprowing&nbspteam,&nbspas&nbspwell&nbspas&nbspcheer&nbspteam. Throughout&nbspmy&nbspbusy&nbspschedule,&nbspI&nbsphave&nbspalways&nbspfound&nbsptime&nbspto&nbsphone&nbspin&nbspon&nbspmy&nbsppassion&nbspfor&nbspprogramming. I&nbspbegan&nbspprogramming&nbspin&nbsphigh&nbspschool,&nbspand&nbspsince&nbspthen,&nbspI&nbsphaven’t&nbspbeen&nbspable&nbspto&nbspstop.&nbsp&nbspMy&nbspinfatuation&nbspfor developing&nbspsoftware&nbsphas&nbspled&nbspme&nbspto&nbspcreate&nbspsudoku&nbspsolvers,&nbsp8&nbsptile&nbsppuzzle&nbspsolvers,&nbspautomated&nbsptesting&nbspfor corporate&nbspcompanies,&nbspa&nbsppersonal&nbspfinance&nbspmanagement&nbspsystem,&nbspand&nbspmany&nbspmore&nbspunique&nbspprograms.</p>
+    <h2 id="aboutmeheader" style='display:none;color:black;'>About&nbspMe
+        <td>&nbsp;</td>
+        <p id="aboutmetxt" style="font-size:30px;font-weight:bold;color:black;">
+            I&nbspam&nbspa&nbspgraduate&nbspfrom&nbspthe&nbspUniversity&nbspof&nbspWisconsin&nbsp-&nbspMadison&nbspwith&nbspa&nbspbachelor&nbspof&nbspscience&nbspin&nbspcomputer
+            science&nbspand&nbspeconomics&nbspwith&nbspmath&nbspemphasis.&nbsp&nbspDuring&nbspmy&nbsptime&nbspat&nbspUW,&nbspI&nbspwas&nbspon&nbspthe&nbspDean’s&nbsplist&nbspmy&nbsplast
+            3&nbspyears&nbspof&nbspmy&nbspeducation,&nbspI&nbspwas&nbspa&nbspstudent&nbsp-&nbspathlete&nbspon&nbspthe&nbsprowing&nbspteam,&nbspas&nbspwell&nbspas&nbspcheer&nbspteam.
+            Throughout&nbspmy&nbspbusy&nbspschedule,&nbspI&nbsphave&nbspalways&nbspfound&nbsptime&nbspto&nbsphone&nbspin&nbspon&nbspmy&nbsppassion&nbspfor&nbspprogramming.
+            I&nbspbegan&nbspprogramming&nbspin&nbsphigh&nbspschool,&nbspand&nbspsince&nbspthen,&nbspI&nbsphaven’t&nbspbeen&nbspable&nbspto&nbspstop.&nbsp&nbspMy&nbspinfatuation&nbspfor
+            developing&nbspsoftware&nbsphas&nbspled&nbspme&nbspto&nbspcreate&nbspsudoku&nbspsolvers,&nbsp8&nbsptile&nbsppuzzle&nbspsolvers,&nbspautomated&nbsptesting&nbspfor
+            corporate&nbspcompanies,&nbspa&nbsppersonal&nbspfinance&nbspmanagement&nbspsystem,&nbspand&nbspmany&nbspmore&nbspunique&nbspprograms.
+        </p>
     </h2>
-    <h3 id="projectsheader"style='display:none'>Projects
-        <button onclick="slideIn('ai')"class='btn'style="font-size:30px;font-weight:bold;color:black;">Artificial&nbspIntelligence&nbsp(Python)</button>
-        <button onclick="slideIn('machineorganization')"class='btn'style="font-size:30px;font-weight:bold;color:black;">Machine&nbspOrganization&nbsp(C)</button>
-        <button onclick="slideIn('dataanalytics')"class='btn'style="font-size:30px;font-weight:bold;color:black;">Data&nbspand&nbspAnalytics&nbsp(Python)</button>
-        <a href="https://github.com/mitchalley/Website/tree/main/Web%20Scraping"class="btn"style="font-size:30px;font-weight:bold;color:black;">Web&nbspScraping&nbsp(Puppeteer:&nbspJavascript)</a>
-        <button onclick="slideIn('javaprojects')"class='btn'style="font-size:30px;font-weight:bold;color:black;">Java&nbspProjects</button>
-        <a href="https://github.com/mitchalley/Website/tree/main/MarketMania"class="btn"style="font-size:30px;font-weight:bold;color:black;">Market&nbspMania&nbsp(Mobile&nbspApp)</a>
+
+    <h3 id="projectsheader" style='display:none'>Projects
+        <td>&nbsp;</td>
+        <button onclick="slideIn('ai')" class='btn'
+            style="font-size:30px;font-weight:bold;color:black;">Artificial&nbspIntelligence&nbsp(Python)</button>
+        <button onclick="slideIn('machineorganization')" class='btn'
+            style="font-size:30px;font-weight:bold;color:black;">Machine&nbspOrganization&nbsp(C)</button>
+        <button onclick="slideIn('dataanalytics')" class='btn'
+            style="font-size:30px;font-weight:bold;color:black;">Data&nbspand&nbspAnalytics&nbsp(Python)</button>
+        <a href="https://github.com/mitchalley/Website/tree/main/Web%20Scraping" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Web&nbspScraping&nbsp(Puppeteer:&nbspJavascript)</a>
+        <button onclick="slideIn('javaprojects')" class='btn'
+            style="font-size:30px;font-weight:bold;color:black;">Java&nbspProjects</button>
+        <a href="https://github.com/mitchalley/Website/tree/main/MarketMania" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Market&nbspMania&nbsp(Mobile&nbspApp)</a>
     </h3>
-    <h4 id="back"style='display:none'>Easter Egg
-        <button onclick="slideOut()"class='backbtn'style="font-size:40px;font-weight:bold;color:black;">&#8249;</button>
+    <h4 id="back" style='display:none'>Easter Egg
+        <button onclick="slideOut()" class='backbtn'
+            style="font-size:40px;font-weight:bold;color:black;">&#8249;</button>
     </h4>
-    <h5 id="ai"style='display:none'>Artificial&nbspIntelligence
-        <a href="https://github.com/mitchalley/Website/tree/main/AI/8-TilePuzzle"class="btn"style="font-size:30px;font-weight:bold;color:black;">A*&nbspAlgorithm&nbspOn&nbsp8&nbsp-&nbspTile&nbspPuzzle</a>
-        <a href="https://github.com/mitchalley/Website/tree/main/AI/LeNetImplementation"class="btn"style="font-size:30px;font-weight:bold;color:black;">LeNet&nbspImplementation</a>
-        <a href="https://github.com/mitchalley/Website/tree/main/AI/DeepLearningWithPytorch"class="btn"style="font-size:30px;font-weight:bold;color:black;">Deep&nbspLearning&nbspWith&nbspPytorch</a> 
-        <a href="https://github.com/mitchalley/Website/tree/main/AI/RegressionAnalysis"class="btn"style="font-size:30px;font-weight:bold;color:black;">Regression&nbspAnalysis</a> 
-        <a href="https://github.com/mitchalley/Website/tree/main/AI/HieratchialClusteringAlgorithm"class="btn"style="font-size:30px;font-weight:bold;color:black;">Hierarchical&nbspClustering&nbspAlgorithm</a> 
-        <a href="https://github.com/mitchalley/Website/tree/main/AI/DetermineEnglishOrSpanish(BayesRule)"class="btn"style="font-size:30px;font-weight:bold;color:black;">Determine&nbspWhether&nbspText&nbspis&nbspEnglish&nbspor&nbspSpanish</a> 
+    <h5 id="ai" style='display:none'>Artificial&nbspIntelligence
+        <td>&nbsp;</td>
+        <a href="https://github.com/mitchalley/Website/tree/main/AI/8-TilePuzzle" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">A*&nbspAlgorithm&nbspOn&nbsp8&nbsp-&nbspTile&nbspPuzzle</a>
+        <a href="https://github.com/mitchalley/Website/tree/main/AI/LeNetImplementation" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">LeNet&nbspImplementation</a>
+        <a href="https://github.com/mitchalley/Website/tree/main/AI/DeepLearningWithPytorch" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Deep&nbspLearning&nbspWith&nbspPytorch</a>
+        <a href="https://github.com/mitchalley/Website/tree/main/AI/RegressionAnalysis" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Regression&nbspAnalysis</a>
+        <a href="https://github.com/mitchalley/Website/tree/main/AI/HieratchialClusteringAlgorithm" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Hierarchical&nbspClustering&nbspAlgorithm</a>
+        <a href="https://github.com/mitchalley/Website/tree/main/AI/DetermineEnglishOrSpanish(BayesRule)" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Determine&nbspWhether&nbspText&nbspis&nbspEnglish&nbspor&nbspSpanish</a>
     </h5>
-    <h6 id="machineorganization"style='display:none'>Machine&nbspOrganization
-        <a href="https://github.com/mitchalley/Website/tree/main/MachineOrganization/HeapAllocator"class="btn"style="font-size:30px;font-weight:bold;color:black;">Heap&nbspAllocator</a>
-        <a href="https://github.com/mitchalley/Website/tree/main/MachineOrganization/Decoder"class="btn"style="font-size:30px;font-weight:bold;color:black;">Decoder</a>
-        <a href="https://github.com/mitchalley/Website/tree/main/MachineOrganization/CacheProject"class="btn"style="font-size:30px;font-weight:bold;color:black;">Cache&nbspProject</a>
-        <a href="https://github.com/mitchalley/Website/tree/main/MachineOrganization/MagicSquare"class="btn"style="font-size:30px;font-weight:bold;color:black;">Magic&nbspSquare</a>
+    <h6 id="machineorganization" style='display:none'>Machine&nbspOrganization
+        <td>&nbsp;</td>
+        <a href="https://github.com/mitchalley/Website/tree/main/MachineOrganization/HeapAllocator" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Heap&nbspAllocator</a>
+        <a href="https://github.com/mitchalley/Website/tree/main/MachineOrganization/Decoder" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Decoder</a>
+        <a href="https://github.com/mitchalley/Website/tree/main/MachineOrganization/CacheProject" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Cache&nbspProject</a>
+        <a href="https://github.com/mitchalley/Website/tree/main/MachineOrganization/MagicSquare" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Magic&nbspSquare</a>
     </h6>
-    <h7 id="javaprojects"style='display:none'>Java&nbspProjects
-        <a href="https://github.com/mitchalley/Website/tree/main/JavaProjects/P09%20Dictionary%20Using%20BST"class="btn"style="font-size:30px;font-weight:bold;color:black;">Dictionary&nbspUsing&nbspBST</a>
-        <a href="https://github.com/mitchalley/Website/tree/main/JavaProjects/PO1%20Shopping%20Cart"class="btn"style="font-size:30px;font-weight:bold;color:black;">Shopping&nbspCart</a>
-        <a href="https://github.com/mitchalley/Website/tree/main/JavaProjects/PO4%20Exception%20Handeling"class="btn"style="font-size:30px;font-weight:bold;color:black;">Exception&nbspHandling</a>
+    <h7 id="javaprojects" style='display:none'>Java&nbspProjects
+        <td>&nbsp;</td>
+        <a href="https://github.com/mitchalley/Website/tree/main/JavaProjects/P09%20Dictionary%20Using%20BST"
+            class="btn" style="font-size:30px;font-weight:bold;color:black;">Dictionary&nbspUsing&nbspBST</a>
+        <a href="https://github.com/mitchalley/Website/tree/main/JavaProjects/PO1%20Shopping%20Cart" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Shopping&nbspCart</a>
+        <a href="https://github.com/mitchalley/Website/tree/main/JavaProjects/PO4%20Exception%20Handeling" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Exception&nbspHandling</a>
     </h7>
-    <h8 id="dataanalytics"style='display:none'>Data&nbspand&nbspAnalytics
-        <a href="https://github.com/mitchalley/Website/tree/main/Data%20and%20Analytics/TermSpreadAnalysis"class="btn"style="font-size:30px;font-weight:bold;color:black;">Term&nbspSpread&nbspAnalysis</a>
-        <a href="https://github.com/mitchalley/Website/blob/main/Data%20and%20Analytics/Exam.ipynb"class="btn"style="font-size:30px;font-weight:bold;color:black;">Exam</a>
-        <a href="https://github.com/mitchalley/Website/blob/main/Data%20and%20Analytics/WebScrapingNotes.ipynb"class="btn"style="font-size:30px;font-weight:bold;color:black;">Web&nbspScraping</a>
-        
+    <h8 id="dataanalytics" style='display:none'>Data&nbspand&nbspAnalytics
+        <td>&nbsp;</td>
+        <a href="https://github.com/mitchalley/Website/tree/main/Data%20and%20Analytics/TermSpreadAnalysis" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Term&nbspSpread&nbspAnalysis</a>
+        <a href="https://github.com/mitchalley/Website/blob/main/Data%20and%20Analytics/Exam.ipynb" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Exam</a>
+        <a href="https://github.com/mitchalley/Website/blob/main/Data%20and%20Analytics/WebScrapingNotes.ipynb"
+            class="btn" style="font-size:30px;font-weight:bold;color:black;">Web&nbspScraping</a>
+
     </h8>
+    <h9 id="contactHeader" style='display:none;font-weight:bold;'>Contact&nbspInformation
+        <td>&nbsp;</td>
+        <p id="emailtxt" style="font-size:30px;font-weight:bold;color:black;">Email:&nbspmitch1.alley@gmail.com</p>
+        <a href="https://github.com/mitchalley/Website/blob/main/Data%20and%20Analytics/Exam.ipynb" class="btn"
+            style="font-size:30px;font-weight:bold;color:black;">Click&nbsphere&nbspto&nbspsee&nbspmy&nbspLinkedIn!</a>
+
+    </h9>
 </body>
+
 </html>

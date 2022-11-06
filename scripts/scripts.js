@@ -129,6 +129,22 @@ function slideOut(){
     
 }
 
+function sweetalert(){
+    Swal.fire({
+        icon: 'info',
+        html:
+          '<b>Are you prepared to witness awesomeness?!</b>',
+        showCloseButton: true,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText:
+          '<a href="https://github.com/mitchalley/Website/blob/main/Resume%20-%20Mitchell%20Alley.pdf" style="color:white;">Let\'s see it!</a> ',
+
+        cancelButtonText:
+          'Settle down hotshot...',
+        cancelButtonAriaLabel: 'Thumbs down'
+      })
+}
 
 
 function onMouseMove(event) {
