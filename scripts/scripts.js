@@ -152,6 +152,29 @@ function sweetalert(){
 }
 
 
+function webScrapePopup(){
+    Swal.fire({
+        icon: 'info',
+        html:
+          '<b>Note: This code will not work unless the username and password variables are filled in and node is installed on your machine</b>',
+        showCloseButton: true,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText:
+          '<a>Proceed</a> ',
+
+        cancelButtonText:
+          'I want to go back',
+        cancelButtonAriaLabel: 'Thumbs down'
+      }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            window.open("https://github.com/mitchalley/Website/tree/main/Web%20Scraping");
+        }
+      })
+}
+
+
 function onMouseMove(event) {
     event.preventDefault();
 
