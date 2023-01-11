@@ -133,15 +133,15 @@ function sweetalert(){
     Swal.fire({
         icon: 'info',
         html:
-          '<b>Are you prepared to witness awesomeness?!</b>',
+          '<b>This will direct you to my github website</b>',
         showCloseButton: true,
         showCancelButton: true,
         focusConfirm: false,
         confirmButtonText:
-          '<a>Let\'s see it!</a> ',
+          '<a>Continue!</a> ',
 
         cancelButtonText:
-          'Settle down hotshot...',
+          'Cancel',
         cancelButtonAriaLabel: 'Thumbs down'
       }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
