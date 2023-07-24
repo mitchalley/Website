@@ -146,7 +146,7 @@ function sweetalert(){
       }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
-            window.open("https://github.com/mitchalley/Website/blob/main/Resume%20-%20Mitchell%20Alley.pdf");
+            window.open("https://github.com/mitchalley/Website/blob/main/Resume.pdf");
         }
       })
 }
