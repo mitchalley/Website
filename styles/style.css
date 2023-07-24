@@ -135,3 +135,11 @@ h1 {
   width: 50px;
   font-size: 1.5em;
 }
+.content{
+  padding:20px;
+  width:46em;
+  border-radius: 25px;
+  position:relative;
+  background: rgb(176,229,235); /* Fallback for older browsers without RGBA-support */
+  background: rgba(176,229,235, 0.7);
+}
